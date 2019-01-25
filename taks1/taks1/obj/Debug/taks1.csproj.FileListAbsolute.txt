@@ -1,0 +1,7 @@
+C:\Users\Шаихислам\source\repos\taks1\taks1\bin\Debug\taks1.exe.config
+C:\Users\Шаихислам\source\repos\taks1\taks1\bin\Debug\taks1.exe
+C:\Users\Шаихислам\source\repos\taks1\taks1\bin\Debug\taks1.pdb
+C:\Users\Шаихислам\source\repos\taks1\taks1\obj\Debug\taks1.csprojAssemblyReference.cache
+C:\Users\Шаихислам\source\repos\taks1\taks1\obj\Debug\taks1.csproj.CoreCompileInputs.cache
+C:\Users\Шаихислам\source\repos\taks1\taks1\obj\Debug\taks1.exe
+C:\Users\Шаихислам\source\repos\taks1\taks1\obj\Debug\taks1.pdb
