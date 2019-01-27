@@ -11,30 +11,23 @@ class Student//Создаем класс с новыми типами данны
     int year_of_study;
   
     Student(){}
-    //Создали контруктор который по умолчанию просто если создать еще контруктор нужно будет создать
-    Student(string new_name, string new_id, int new_year_of_study)//Конструктор бладоря которому можно задать значения без использования сета
+    //Создали контруктор который по умолчанию. Просто если создать еще один контруктор нужно будет создать тот что по умолчанию заново
+    Student(string new_name, string new_id)//Конструктор бладоря которому можно задать значения без использования сеттера
     {
         name = new_name;
         id = new_id;
-        year_of_study = new_year_of_study;
     }
-    void set(string new_name, string new_id, int new_year_of_study)//Метод с помощью которого можно поменять значения переменых 
+    void set_name(string new_name)//Метод с помощью которого можно поменять значения переменной "name"
     {
         name = new_name;
+    }
+    void set_id(string new_id)
+    {
         id = new_id;
-        year_of_study = new_year_of_study;
     }
-    string get_name()//Создал три метода которые возвращяют значения переменых
+    void increment_the_year_of_study(int year)//Cоздали метод который увеличивает значения заданой перемены "год" и присвает его к переменой год обучения
     {
-        return name;
-    }
-    string get_id()
-    {
-        return id;
-    }
-    int get_year_of_study()
-    {
-        return year_of_study;
+        year_of_study = year + 1;
     }
 }
 
@@ -44,7 +37,7 @@ namespace task2
     {
         static void Main(string[] args)
         {
-
+            //Функция мэйн пуста ибо по заданию я должен был работать только с классом Student
         }
     }
 }
