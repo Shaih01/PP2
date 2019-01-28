@@ -17,17 +17,20 @@ class Student//Создаем класс с новыми типами данны
         name = new_name;
         id = new_id;
     }
-    void set_name(string new_name)//Метод с помощью которого можно поменять значения переменной "name"
+    string set_name(string new_name)//Метод с помощью которого можно поменять значения переменной "name"
     {
         name = new_name;
+        return name;
     }
-    void set_id(string new_id)
+    string set_id(string new_id)
     {
         id = new_id;
+        return id;
     }
-    void increment_the_year_of_study(int year)//Cоздали метод который увеличивает значения заданой перемены "год" и присвает его к переменой год обучения
+    int increment_the_year_of_study(int year)//Cоздали метод который увеличивает значения заданой перемены "год" и присвает его к переменой год обучения
     {
         year_of_study = year + 1;
+        return year_of_study;
     }
 }
 
