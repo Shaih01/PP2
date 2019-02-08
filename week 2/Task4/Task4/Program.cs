@@ -14,13 +14,18 @@ namespace Task4
 
             string path = "C:/Top-level folder/path/t.txt";
             string path1 = "C:/Top-level folder/path1/t.txt";
+
+            StreamWriter sw = new StreamWriter(path);
+            sw.Write("");
+            sw.Close();
             FileInfo f = new FileInfo(path);
 
             if(f.Exists)
             {
-                f.CopyTo(path1);
+                f.CopyTo(path1,true);
                 f.Delete();
             }
+            
         }
     }
 }
