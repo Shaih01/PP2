@@ -1,0 +1,7 @@
+C:\Users\Шаихислам\source\repos\WEEK # 3\TASK\TASK\bin\Debug\TASK.exe.config
+C:\Users\Шаихислам\source\repos\WEEK # 3\TASK\TASK\bin\Debug\TASK.exe
+C:\Users\Шаихислам\source\repos\WEEK # 3\TASK\TASK\bin\Debug\TASK.pdb
+C:\Users\Шаихислам\source\repos\WEEK # 3\TASK\TASK\obj\Debug\TASK.csprojAssemblyReference.cache
+C:\Users\Шаихислам\source\repos\WEEK # 3\TASK\TASK\obj\Debug\TASK.csproj.CoreCompileInputs.cache
+C:\Users\Шаихислам\source\repos\WEEK # 3\TASK\TASK\obj\Debug\TASK.exe
+C:\Users\Шаихислам\source\repos\WEEK # 3\TASK\TASK\obj\Debug\TASK.pdb
