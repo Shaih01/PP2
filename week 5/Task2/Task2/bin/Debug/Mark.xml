@@ -1,4 +1,13 @@
 <?xml version="1.0"?>
-<Mark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <points>97</points>
-</Mark>
+<Temp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <grades>
+    <Mark>
+      <points>97</points>
+      <grade>A</grade>
+    </Mark>
+    <Mark>
+      <points>111</points>
+      <grade>A++++++</grade>
+    </Mark>
+  </grades>
+</Temp>

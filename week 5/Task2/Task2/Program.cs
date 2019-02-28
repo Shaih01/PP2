@@ -8,19 +8,54 @@ using System.Xml.Serialization;
 
 namespace Task2
 {
-    public class Mark
+    public class Temp
+    {
+        public List<Mark> grades;
+        public Mark points;
+        public Mark grade;
+        public Temp()
+        {
+            grades = new List<Mark>();
+        }
+
+        public Temp(Mark points, Mark grade)
+        {
+            this.points = points;
+            this.grade = grade;
+            grades = new List<Mark>();
+        }
+        
+        public void Save(Temp ma)
+        {
+            FileStream fs = new FileStream("Mark.xml", FileMode.Truncate, FileAccess.ReadWrite);
+            XmlSerializer xs = new XmlSerializer(typeof(Temp));
+            xs.Serialize(fs, ma);
+            fs.Close();
+        }
+        public override string ToString()
+        {
+            return "Your points is: " + grades[0].points + ". And your grade is " + grades[0].grade;
+        }
+    }
+
+    public class Mark   
     {
         public int points;
         public string grade;
-
-        public Mark() { }
+        
+        public Mark(){}
 
         public Mark(int points)
         {
+            this.points = points;
             if (this.points >= 0 && this.points <= 100)
                 this.points = points;
-            else
-                this.points = 0;
+            GetLetter();
+        }
+
+        public override string ToString()
+        {
+            return "Your points: " + points + "." + " Your grade is " + grade;
         }
 
         public void GetLetter()
@@ -69,41 +104,40 @@ namespace Task2
             {
                 grade = "F";
             }
-        }
-
-        public override string ToString()
-        {
-            return "Your points: " + points + "." + " Your grade is " + grade;
+            if (points > 100)
+            {
+                grade = "A++++++";
+            }
         }
 
     }
-
     class Program
     {
         public static void F1()
         {
             Mark m = new Mark(97);
-            FileStream fs = new FileStream("Mark.xml", FileMode.Truncate, FileAccess.ReadWrite);
-            XmlSerializer xs = new XmlSerializer(typeof(Mark));
-            xs.Serialize(fs, m);
-            m.GetLetter();
+            Mark x = new Mark(111);
+            Temp temp = new Temp();
+            temp.grades.Add(m);
+            temp.grades.Add(x);
+            temp.Save(temp);
             Console.WriteLine(m);
-            fs.Close();
+            Console.WriteLine(x);
         }
 
         public static void F2()
         {
             FileStream fs = new FileStream("Mark.xml", FileMode.OpenOrCreate, FileAccess.ReadWrite);
-            XmlSerializer xs = new XmlSerializer(typeof(Mark));
-            Mark m1 = xs.Deserialize(fs) as Mark;
+            XmlSerializer xs = new XmlSerializer(typeof(Temp));
+            Temp m1 = xs.Deserialize(fs) as Temp;
             Console.WriteLine(m1);
             fs.Close();
         }
 
         public static void Main(string[] args)
         {
-            F1();
-            //F2();
+            //F1();
+            F2();
         }
     }
 }
