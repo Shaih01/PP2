@@ -1,0 +1,7 @@
+C:\Users\Шаихислам\source\repos\week8 lab\Svetofor\Svetofor\obj\Debug\Svetofor.csprojAssemblyReference.cache
+C:\Users\Шаихислам\source\repos\week8 lab\Svetofor\Svetofor\obj\Debug\Svetofor.csproj.CoreCompileInputs.cache
+C:\Users\Шаихислам\source\repos\week8 lab\Svetofor\Svetofor\bin\Debug\Svetofor.exe.config
+C:\Users\Шаихислам\source\repos\week8 lab\Svetofor\Svetofor\bin\Debug\Svetofor.exe
+C:\Users\Шаихислам\source\repos\week8 lab\Svetofor\Svetofor\bin\Debug\Svetofor.pdb
+C:\Users\Шаихислам\source\repos\week8 lab\Svetofor\Svetofor\obj\Debug\Svetofor.exe
+C:\Users\Шаихислам\source\repos\week8 lab\Svetofor\Svetofor\obj\Debug\Svetofor.pdb
