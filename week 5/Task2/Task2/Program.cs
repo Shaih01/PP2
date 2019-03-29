@@ -12,17 +12,8 @@ namespace Task2
     {
         [XmlArray("GRADES")]
         public List<Mark> grades;
-        public Mark points;
-        public Mark grade;
         public Temp()
         {
-            grades = new List<Mark>();
-        }
-
-        public Temp(Mark points, Mark grade)
-        {
-            this.points = points;
-            this.grade = grade;
             grades = new List<Mark>();
         }
         
@@ -32,10 +23,6 @@ namespace Task2
             XmlSerializer xs = new XmlSerializer(typeof(Temp));
             xs.Serialize(fs, ma);
             fs.Close();
-        }
-        public override string ToString()
-        {
-            return "Your points is: " + grades[0].points + ". And your grade is " + grades[0].grade;
         }
     }
 
@@ -138,8 +125,8 @@ namespace Task2
 
         public static void Main(string[] args)
         {
-            //F1();
-            F2();
+            F1();
+            //F2();
         }
     }
 }
