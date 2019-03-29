@@ -1,0 +1,7 @@
+C:\Users\Шаихислам\source\repos\week6ex3akshabaevbymyself\week6ex3akshabaevbymyself\obj\Debug\week6ex3akshabaevbymyself.csprojAssemblyReference.cache
+C:\Users\Шаихислам\source\repos\week6ex3akshabaevbymyself\week6ex3akshabaevbymyself\obj\Debug\week6ex3akshabaevbymyself.csproj.CoreCompileInputs.cache
+C:\Users\Шаихислам\source\repos\week6ex3akshabaevbymyself\week6ex3akshabaevbymyself\bin\Debug\week6ex3akshabaevbymyself.exe.config
+C:\Users\Шаихислам\source\repos\week6ex3akshabaevbymyself\week6ex3akshabaevbymyself\bin\Debug\week6ex3akshabaevbymyself.exe
+C:\Users\Шаихислам\source\repos\week6ex3akshabaevbymyself\week6ex3akshabaevbymyself\bin\Debug\week6ex3akshabaevbymyself.pdb
+C:\Users\Шаихислам\source\repos\week6ex3akshabaevbymyself\week6ex3akshabaevbymyself\obj\Debug\week6ex3akshabaevbymyself.exe
+C:\Users\Шаихислам\source\repos\week6ex3akshabaevbymyself\week6ex3akshabaevbymyself\obj\Debug\week6ex3akshabaevbymyself.pdb
