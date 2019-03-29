@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Temp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <grades>
+  <GRADES>
     <Mark>
-      <points>97</points>
-      <grade>A</grade>
+      <points>32</points>
+      <grade>F</grade>
     </Mark>
     <Mark>
-      <points>111</points>
-      <grade>A++++++</grade>
+      <points>43</points>
+      <grade>F</grade>
     </Mark>
-  </grades>
+  </GRADES>
 </Temp>

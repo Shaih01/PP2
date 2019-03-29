@@ -10,6 +10,7 @@ namespace Task2
 {
     public class Temp
     {
+        [XmlArray("GRADES")]
         public List<Mark> grades;
         public Mark points;
         public Mark grade;
@@ -44,7 +45,6 @@ namespace Task2
         public string grade;
         
         public Mark(){}
-
         public Mark(int points)
         {
             this.points = points;
@@ -109,14 +109,13 @@ namespace Task2
                 grade = "A++++++";
             }
         }
-
     }
     class Program
     {
         public static void F1()
         {
-            Mark m = new Mark(97);
-            Mark x = new Mark(111);
+            Mark m = new Mark(32);
+            Mark x = new Mark(43);
             Temp temp = new Temp();
             temp.grades.Add(m);
             temp.grades.Add(x);
@@ -130,7 +129,10 @@ namespace Task2
             FileStream fs = new FileStream("Mark.xml", FileMode.OpenOrCreate, FileAccess.ReadWrite);
             XmlSerializer xs = new XmlSerializer(typeof(Temp));
             Temp m1 = xs.Deserialize(fs) as Temp;
-            Console.WriteLine(m1);
+            for(int i = 0; i < m1.grades.Count; i++)
+            {
+                Console.WriteLine(m1.grades[i]);
+            }
             fs.Close();
         }
 
